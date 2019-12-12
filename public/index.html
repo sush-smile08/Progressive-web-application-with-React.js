@@ -4,12 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#000000">
-    <!-- Tell the browser it's a PWA -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="favicon.ico">
     <meta name="mobile-web-app-capable" content="yes">
-    <!-- Tell iOS it's a PWA -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <title>React App</title>
     <style type="text/css">
       body {
@@ -53,7 +51,7 @@
           }, function(err) {
             console.log('Worker registration failed', err);
           }).catch(function(err) {
-            console.log(err);
+            console.log(err)
           });
         });
       } else {
